@@ -3,4 +3,3 @@ keras-nlp==0.5.1
 pandas==1.5.3
 Requests==2.30.0
 streamlit==1.22.0
-~treamlit==1.19.0
