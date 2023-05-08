@@ -21,8 +21,7 @@ def load_keras_model_from_hub(model_id):
     download_file(model_url, local_path)
    
 
-# Replace 'nielzac/private_fake' with your actual model ID on Hugging Face Hub
-#load_keras_model_from_hub("nielzac/private_fake")
+
 
 
 
@@ -34,6 +33,7 @@ st.markdown(
     """
     This service helps detect potentially fake domain names. The model is trained on a dataset of 50,000 sites, 
     which represents around 2% of the available data. It's suitable for businesses and also integrated soon into StendhalGPT+.
+Only avalaible for .fr websites. Example : colis-livraison.fr, cnil-info.fr, antai-gov.fr, amendes-paiement.fr, leclerc.fr, hachette.fr.  
     """
 )
 
@@ -80,6 +80,13 @@ if st.button("Predict"):
     confidence_interval = 0.1
     if abs(y_pred[0] - threshold) < confidence_interval:
         st.write("Note: The prediction score is close to the threshold. The result may not be as reliable.")
-    
+        
+
+# Définir les informations sur l'origine des données
+    data_source = "Afnic, https://dl.red.flag.domains/ and others"
+    # Définir l'adresse de contact
+    contact_address = "contact@stendhalgpt.fr"
+    st.write(f"Data source: {data_source}")
+    st.write(f"Contact: {contact_address}")
     st.markdown(f'<style>body {{ background-color: {background_color}; }}</style>', unsafe_allow_html=True)
 
