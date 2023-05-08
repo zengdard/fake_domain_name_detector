@@ -31,9 +31,9 @@ st.set_page_config(page_title="Fake Domain Detector", layout="wide")
 st.title("Fake Domain Detector (Beta) - StendhalGPT Security")
 st.markdown(
     """
-    This service helps detect potentially fake domain names. The model is trained on a dataset of 50,000 sites, 
-    which represents around 2% of the available data. It's suitable for businesses and also integrated soon into StendhalGPT+.
-Only avalaible for .fr websites. Example : colis-livraison.fr, cnil-info.fr, antai-gov.fr, amendes-paiement.fr, leclerc.fr, hachette.fr.  
+    This service helps detect potentially fake domain names. The model is trained on a dataset of 50,000 sites,
+    which represents around 2% of the available data. It's suitable for businesses and also integrated soon into StendhalGPT+.\n
+    Only avalaible for .fr websites. \nExample : 'colis-livraison.fr', 'cnil-info.fr', 'antai-gov.fr', 'amendes-paiement.fr', 'leclerc.fr', 'hachette.fr'.  
     """
 )
 
