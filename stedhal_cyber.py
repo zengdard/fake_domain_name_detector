@@ -5,7 +5,7 @@ from keras_nlp.tokenizers import UnicodeCodepointTokenizer
 from keras.models import load_model
 import streamlit as st
 
-os.environ["HUGGINGFACE_TOKEN"] = "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"
+os.environ["HUGGINGFACE_TOKEN"] = 
 
 
 def download_file(url, local_path):
@@ -23,19 +23,8 @@ def load_keras_model_from_hub(model_id):
 
 
 
-
-
-
 st.set_page_config(page_title="Fake Domain Detector", layout="wide")
 
-st.title("Fake Domain Detector (Beta) - StendhalGPT Security")
-st.markdown(
-    """
-    This service helps detect potentially fake domain names. The model is trained on a dataset of 50,000 sites,
-    which represents around 2% of the available data. It's suitable for businesses and also integrated soon into StendhalGPT+.\n
-    Only avalaible for .fr websites. \nExample : 'colis-livraison.fr', 'cnil-info.fr', 'antai-gov.fr', 'amendes-paiement.fr', 'leclerc.fr', 'hachette.fr'.  
-    """
-)
 
 # Input domain names
 domain_names = st.text_input("Enter a domain name:")
@@ -83,9 +72,7 @@ if st.button("Predict"):
         
 
 # Définir les informations sur l'origine des données
-    data_source = "Afnic, https://dl.red.flag.domains/ and others"
     # Définir l'adresse de contact
-    contact_address = "contact@stendhalgpt.fr"
     st.write(f"Data source: {data_source}")
     st.write(f"Contact: {contact_address}")
     st.markdown(f'<style>body {{ background-color: {background_color}; }}</style>', unsafe_allow_html=True)
