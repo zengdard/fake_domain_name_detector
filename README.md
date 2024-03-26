@@ -1,4 +1,4 @@
-Fake Domain Detector (Beta) - StendhalGPT Security
+Fake Domain Detector
 ===================================================
 
 This service helps detect potentially fake domain names. The model is trained on a dataset of 50,000 sites, which represents around 2% of the available data. It's suitable for businesses and also integrated soon into StendhalGPT+. Only available for .fr websites.
